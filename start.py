@@ -4,47 +4,47 @@ import math
 
 def calc():
     print('addition(+) subtraction(-) multiplication(*) divition(/) square_root(sq_rt)?')
-    calc = input()
-    if calc == ('+'):
+    met = input()
+    if met == ('+'):
         print('You choosed addition.')
-    elif calc == ('-'):
+    elif met == ('-'):
         print('You choosed subtraction.')
-    elif calc == ('*'):
+    elif met == ('*'):
         print('You choosed multiplication.')
-    elif calc == ('/'):
+    elif met == ('/'):
         print('You choosed divition')
-    elif calc == ('sq_rt'):
+    elif met == ('sq_rt'):
         print('You choosed square_root')
     else:
-        print(f'{calc} is not a supported calculation methon. Thanks for using our service')
-        time.sleep(2)
-        exit()
-
-    num1 = 0
-    num2 = 0
-
-    def numbers():
+        print(f'{met} is not a supported calculation method. Please input a supported method')
+        time.sleep(1)
+        calc()
+    
+    if met == ("+"):
         print("Please enter the first number.")
         num1 = input()
         print("Please enter the second number.")
         num2 = input()
-
-    if calc == ("+"):
-        numbers()
         print(f'The answer is {int(num1) + int(num2)}')
         fin()
-    elif calc == ("-"):
-        numbers()
+    elif met == ("-"):
+        print("Please enter the first number.")
+        num1 = input()
+        print("Please enter the second number.")
+        num2 = input()
         print(f'The answer is {int(num1) - int(num2)}')
         fin()
-    elif calc == ("*"):
-        numbers()
+    elif met == ("*"):
+        print("Please enter the first number.")
+        num1 = input()
+        print("Please enter the second number.")
+        num2 = input()
         print(f'The answer is {int(num1) * int(num2)}')
         fin()
-    elif calc == ("sq_rt"):
+    elif met == ("sq_rt"):
         print('Please enter the number')
         num1 = input()
-        print(f'The answer is {math.sqrt(num1)}')
+        print(f'The answer is {math.sqrt(int(num1))}')
         fin()
 
 def fin():
