@@ -3,13 +3,13 @@ import numpy
 import math
 
 def calc():
-    print('----------------------------------------------------------------------------------------------------')
+    print('-'*100)
     print('1. addition')
     print('2. subtraction')
     print('3. multiplication')
     print('4. divition')
     print('5. square_root')
-    print('----------------------------------------------------------------------------------------------------')
+    print('-'*100)
     met = input(1/2/3/4)
     if met == ('1'):
         print('You choosed addition.')
