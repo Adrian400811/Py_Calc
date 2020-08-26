@@ -11,7 +11,7 @@ def calc():
     print('5. square_root')
     print('6. %')
     print('-'*100)
-    met = input("input(1/2/3/4/5/6)")
+    met = input("input(1/2/3/4/5/6/exit)")
     if met == '1':
         print('You chose addition.')
     elif met == '2':
@@ -24,6 +24,10 @@ def calc():
         print('You chose square_root')
     elif met == '6':
         print('You chose %')
+    elif met == "exit":
+        print("Shutting Down")
+        time.sleep(1)
+        exit()
     else:
         print(f'{met} is not a supported calculation method. Please input a supported method')
         time.sleep(1)
@@ -71,11 +75,11 @@ def fin():
         calc()
     elif leave == "n":
         print("Shutting Down")
-        time.sleep(2)
+        time.sleep(1)
         exit()
     else:
         print("I don't know what do you mean.")
-        time.sleep(2)
+        time.sleep(1)
         fin()
 
 
